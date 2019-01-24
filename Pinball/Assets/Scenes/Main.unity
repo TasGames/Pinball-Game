@@ -674,25 +674,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4804569804622236, guid: 7152b4eeaf567b548b2a663f9b6d1182, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4804569804622236, guid: 7152b4eeaf567b548b2a663f9b6d1182, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4804569804622236, guid: 7152b4eeaf567b548b2a663f9b6d1182, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
     - target: {fileID: 1207279366271680, guid: 7152b4eeaf567b548b2a663f9b6d1182, type: 2}
       propertyPath: m_Name
       value: BumpTri R1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1207279366271680, guid: 7152b4eeaf567b548b2a663f9b6d1182, type: 2}
-      propertyPath: m_TagString
-      value: TriTag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7152b4eeaf567b548b2a663f9b6d1182, type: 2}
@@ -874,8 +858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightFlipper: {fileID: 1310800402}
   leftFlipper: {fileID: 1936092419}
-  torqueForceR: -60
-  torqueForceL: 60
+  torqueForce: 60
 --- !u!4 &466172462
 Transform:
   m_ObjectHideFlags: 0
@@ -1555,25 +1538,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 4029690417849388, guid: 1924f5532159f2848982f67a94fbec87, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029690417849388, guid: 1924f5532159f2848982f67a94fbec87, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029690417849388, guid: 1924f5532159f2848982f67a94fbec87, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.75
-      objectReference: {fileID: 0}
     - target: {fileID: 1358256811690160, guid: 1924f5532159f2848982f67a94fbec87, type: 2}
       propertyPath: m_Name
       value: BumpRed S1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1358256811690160, guid: 1924f5532159f2848982f67a94fbec87, type: 2}
-      propertyPath: m_TagString
-      value: RedTag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1924f5532159f2848982f67a94fbec87, type: 2}
@@ -1779,25 +1746,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4810698465502184, guid: dfbc622b4c7ab984bb4d531f34ed59e8, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810698465502184, guid: dfbc622b4c7ab984bb4d531f34ed59e8, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810698465502184, guid: dfbc622b4c7ab984bb4d531f34ed59e8, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.75
-      objectReference: {fileID: 0}
     - target: {fileID: 1195212684791388, guid: dfbc622b4c7ab984bb4d531f34ed59e8, type: 2}
       propertyPath: m_Name
       value: BumpGreen S1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1195212684791388, guid: dfbc622b4c7ab984bb4d531f34ed59e8, type: 2}
-      propertyPath: m_TagString
-      value: GreenTag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfbc622b4c7ab984bb4d531f34ed59e8, type: 2}
@@ -1885,8 +1836,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1325085557
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0e632becb92c8e141b5cbdaf2222d3e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

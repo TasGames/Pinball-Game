@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class respawnBall : MonoBehaviour
 {
     protected Rigidbody2D ballR;
-    public GameObject ball;
+    [SerializeField] protected GameObject ball;
     static public int lives;
 
     void Start()

@@ -2,19 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class flipController : MonoBehaviour {
-
+public class flipController : MonoBehaviour 
+{
     protected Rigidbody2D rightFlipperRigid;
     protected Rigidbody2D leftFlipperRigid;
-    public GameObject rightFlipper;
-    public GameObject leftFlipper;
-    public float torqueForceR;
-    public float torqueForceL;
+    [SerializeField] protected GameObject rightFlipper;
+    [SerializeField] protected GameObject leftFlipper;
+    [SerializeField] protected float torqueForce;
+
+    protected float torqueForceL;
+    protected float torqueForceR;
 
     void Start()
     {
         rightFlipperRigid = rightFlipper.GetComponent<Rigidbody2D>();
         leftFlipperRigid = leftFlipper.GetComponent<Rigidbody2D>();
+
+        torqueForceR = torqueForce * -1;
+        torqueForceL = torqueForce;
     }
 
     void Update()

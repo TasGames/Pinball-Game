@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class drag : MonoBehaviour
 {
-
-    public float moveSpeed = 10.0f;
+    [SerializeField] protected float moveSpeed = 10.0f;
 
     protected Vector2 targetPosition;
     protected Rigidbody2D rb;

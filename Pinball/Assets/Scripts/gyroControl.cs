@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class gyroControl : MonoBehaviour
 {
-    public float movement;
+    [SerializeField] protected float movement;
     protected Rigidbody ballRb;
 
     void Start ()

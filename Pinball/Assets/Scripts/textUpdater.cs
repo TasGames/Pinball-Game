@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class textUpdater : MonoBehaviour
 {
-    public Text scoreText;
-    public Text livesText;
-    public Text hScoreText;
+    [SerializeField] protected Text scoreText;
+    [SerializeField] protected Text livesText;
+    [SerializeField] protected Text hScoreText;
     static protected int highScore;
 
     void Start()
@@ -18,13 +18,17 @@ public class textUpdater : MonoBehaviour
             highScore = Bumper.score;
             PlayerPrefs.SetInt("Highscore", highScore);
         }
-        hScoreText.text = "High-Score: " + PlayerPrefs.GetInt("Highscore", highScore);
+
+        if (hScoreText != null)
+            hScoreText.text = "High-Score: " + PlayerPrefs.GetInt("Highscore", highScore);
     }
 
     void Update()
     {
-        scoreText.text = "Score: " + Bumper.score;
-        livesText.text = "Lives: " + respawnBall.lives;
-
+        if (scoreText != null)
+            scoreText.text = "Score: " + Bumper.score;
+        
+        if (livesText != null)
+            livesText.text = "Lives: " + respawnBall.lives;
     }
 }
